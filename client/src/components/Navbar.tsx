@@ -38,7 +38,7 @@ export default function Navbar() {
   const isActive = (to: string) => location.pathname === to
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 dark:bg-navy/95 backdrop-blur-md shadow-lg shadow-navy/10' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-navy/90 backdrop-blur-md shadow-lg shadow-navy/10' : 'bg-navy/50 backdrop-blur-md'}`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -46,7 +46,7 @@ export default function Navbar() {
             <div className="w-9 h-9 rounded-full gold-gradient flex items-center justify-center shadow-md group-hover:shadow-gold/40 transition-shadow">
               <span className="text-white font-serif font-bold text-sm">S</span>
             </div>
-            <span className="font-serif text-xl font-bold text-navy dark:text-cream group-hover:text-gold dark:group-hover:text-gold transition-colors">
+            <span className="font-serif text-xl font-bold text-white group-hover:text-gold transition-colors">
               Shinny
             </span>
           </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative font-medium text-sm transition-colors duration-200 group ${isActive(link.to) ? 'text-gold' : 'text-navy/70 dark:text-cream/70 hover:text-gold dark:hover:text-gold'}`}
+                className={`relative font-medium text-sm transition-colors duration-200 group ${isActive(link.to) ? 'text-gold' : 'text-white hover:text-gold'}`}
               >
                 {link.label}
                 <span className={`absolute -bottom-1 left-0 h-0.5 bg-gold transition-all duration-300 ${isActive(link.to) ? 'w-full' : 'w-0 group-hover:w-full'}`} />
@@ -68,23 +68,23 @@ export default function Navbar() {
           {/* Actions */}
           <div className="flex items-center gap-2">
             {/* Search */}
-            <button onClick={() => setSearchOpen(!searchOpen)} className="p-2 rounded-full hover:bg-cream/50 dark:hover:bg-navy-light transition-colors text-navy dark:text-cream hover:text-gold dark:hover:text-gold">
+            <button onClick={() => setSearchOpen(!searchOpen)} className="p-2 rounded-full hover:bg-white/10 transition-colors text-white hover:text-gold">
               <Search size={18} />
             </button>
 
             {/* Lang toggle */}
-            <button onClick={() => setLang(lang === 'en' ? 'ar' : 'en')} className="p-2 rounded-full hover:bg-cream/50 dark:hover:bg-navy-light transition-colors text-navy dark:text-cream hover:text-gold dark:hover:text-gold flex items-center gap-1">
+            <button onClick={() => setLang(lang === 'en' ? 'ar' : 'en')} className="p-2 rounded-full hover:bg-white/10 transition-colors text-white hover:text-gold flex items-center gap-1">
               <Globe size={18} />
               <span className="text-xs font-bold hidden sm:block">{lang === 'en' ? 'ع' : 'EN'}</span>
             </button>
 
             {/* Theme toggle */}
-            <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-cream/50 dark:hover:bg-navy-light transition-colors text-navy dark:text-cream hover:text-gold dark:hover:text-gold">
+            <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-white/10 transition-colors text-white hover:text-gold">
               {dark ? <Sun size={18} /> : <Moon size={18} />}
             </button>
 
             {/* Wishlist */}
-            <Link to="/shop" className="relative p-2 rounded-full hover:bg-cream/50 dark:hover:bg-navy-light transition-colors text-navy dark:text-cream hover:text-gold dark:hover:text-gold">
+            <Link to="/shop" className="relative p-2 rounded-full hover:bg-white/10 transition-colors text-white hover:text-gold">
               <Heart size={18} />
               {wishlistIds.length > 0 && (
                 <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-gold text-white text-[10px] font-bold rounded-full flex items-center justify-center">
@@ -94,7 +94,7 @@ export default function Navbar() {
             </Link>
 
             {/* Cart */}
-            <Link to="/cart" className="relative p-2 rounded-full hover:bg-cream/50 dark:hover:bg-navy-light transition-colors text-navy dark:text-cream hover:text-gold dark:hover:text-gold">
+            <Link to="/cart" className="relative p-2 rounded-full hover:bg-white/10 transition-colors text-white hover:text-gold">
               <ShoppingBag size={18} />
               {getItemCount() > 0 && (
                 <motion.span
@@ -109,7 +109,7 @@ export default function Navbar() {
             </Link>
 
             {/* Mobile menu toggle */}
-            <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden p-2 rounded-full hover:bg-cream/50 dark:hover:bg-navy-light transition-colors text-navy dark:text-cream">
+            <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden p-2 rounded-full hover:bg-white/10 transition-colors text-white">
               {mobileOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
