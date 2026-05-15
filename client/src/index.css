@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased bg-white dark:bg-navy text-navy dark:text-cream transition-colors duration-300;
+  }
+
+  [dir="rtl"] body {
+    font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-serif dark:text-cream;
+  }
+
+  ::selection {
+    @apply bg-gold/30 text-navy;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-cream/20;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gold/50 rounded-full;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold hover:bg-gold-dark text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-gold/30 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-gold text-gold hover:bg-gold hover:text-white font-semibold px-6 py-3 rounded-full transition-all duration-300;
+  }
+
+  .btn-ghost {
+    @apply text-navy dark:text-cream hover:text-gold dark:hover:text-gold transition-colors duration-200 font-medium;
+  }
+
+  .card {
+    @apply bg-white dark:bg-navy-light rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-cream dark:border-navy-lighter bg-white dark:bg-navy-light text-navy dark:text-cream placeholder-navy/40 dark:placeholder-cream/40 focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all duration-200;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-serif font-bold text-navy dark:text-cream;
+  }
+
+  .section-subtitle {
+    @apply text-navy/60 dark:text-cream/60 mt-3 text-lg;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #C9A84C 0%, #D4B96A 50%, #B8923C 100%);
+  }
+
+  .glass {
+    @apply backdrop-blur-md bg-white/10 dark:bg-navy/10 border border-white/20;
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.1) 50%, transparent 100%);
+    background-size: 200% 100%;
+    @apply animate-shimmer;
+  }
+
+  .page-hero {
+    @apply relative min-h-[40vh] flex items-center justify-center overflow-hidden;
+    background: linear-gradient(135deg, #1A1A2E 0%, #252545 50%, #1A1A2E 100%);
+  }
+}
+
+/* Gold shimmer text */
+.text-gold-shine {
+  background: linear-gradient(90deg, #C9A84C, #E8D5B7, #C9A84C, #B8923C, #C9A84C);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* Stagger animation helper */
+.stagger > * {
+  @apply animate-fade-in-up;
+}
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 100ms; }
+.stagger > *:nth-child(3) { animation-delay: 200ms; }
+.stagger > *:nth-child(4) { animation-delay: 300ms; }
+.stagger > *:nth-child(5) { animation-delay: 400ms; }
+.stagger > *:nth-child(6) { animation-delay: 500ms; }
+
+/* Pattern overlay */
+.pattern-dots {
+  background-image: radial-gradient(circle, rgba(201,168,76,0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

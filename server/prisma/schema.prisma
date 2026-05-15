@@ -1,0 +1,59 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Product {
+  id            Int      @id @default(autoincrement())
+  name          String
+  nameAr        String
+  description   String
+  descriptionAr String
+  price         Float
+  images        String   // JSON array of URLs
+  category      String
+  colors        String   // JSON array
+  sizes         String   // JSON array
+  stock         Int      @default(100)
+  featured      Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Order {
+  id            Int      @id @default(autoincrement())
+  orderNumber   String   @unique
+  customerName  String
+  email         String
+  phone         String
+  address       String
+  city          String
+  paymentMethod String
+  paymentStatus String   @default("pending")
+  status        String   @default("pending")
+  total         Float
+  items         String   // JSON array
+  promoCode     String?
+  discount      Float    @default(0)
+  paymobToken   String?
+  fawryRef      String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model PromoCode {
+  id       Int     @id @default(autoincrement())
+  code     String  @unique
+  discount Float
+  active   Boolean @default(true)
+}
+
+model Admin {
+  id           Int    @id @default(autoincrement())
+  email        String @unique
+  passwordHash String
+}

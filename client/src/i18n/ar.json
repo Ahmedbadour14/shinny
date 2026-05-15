@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "shop": "المتجر",
+    "about": "عن شيني",
+    "contact": "تواصل معنا",
+    "cart": "السلة",
+    "wishlist": "المفضلة",
+    "admin": "الإدارة"
+  },
+  "hero": {
+    "badge": "صُنع بيدوياً في مصر",
+    "title": "حقائب خرز فنية",
+    "subtitle": "كل قطعة تحكي قصة — مصنوعة بيدوياً، تُحمل بفخر.",
+    "cta": "تسوق المجموعة",
+    "explore": "اكتشف قصتنا"
+  },
+  "featured": {
+    "title": "المجموعة المميزة",
+    "subtitle": "قطع مختارة بعناية من أمهر الحرفيين"
+  },
+  "categories": {
+    "title": "تسوق حسب الفئة",
+    "all": "الكل",
+    "small": "صغيرة",
+    "medium": "متوسطة",
+    "large": "كبيرة",
+    "clutch": "حقيبة يد",
+    "shoulder": "حقيبة كتف"
+  },
+  "product": {
+    "addToCart": "أضف للسلة",
+    "addedToCart": "تمت الإضافة!",
+    "wishlist": "أضف للمفضلة",
+    "inWishlist": "في المفضلة",
+    "color": "اللون",
+    "size": "الحجم",
+    "inStock": "متوفر",
+    "outOfStock": "غير متوفر",
+    "description": "الوصف",
+    "sizeGuide": "دليل المقاسات",
+    "related": "قد يعجبك أيضاً",
+    "whatsappOrder": "اطلب عبر واتساب",
+    "shareProduct": "مشاركة"
+  },
+  "shop": {
+    "title": "مجموعتنا",
+    "filters": "الفلاتر",
+    "sortBy": "ترتيب حسب",
+    "search": "ابحث عن حقيبة...",
+    "noResults": "لا توجد منتجات",
+    "clearFilters": "مسح الفلاتر",
+    "priceRange": "نطاق السعر",
+    "sort": {
+      "default": "الافتراضي",
+      "priceAsc": "السعر: الأقل أولاً",
+      "priceDesc": "السعر: الأعلى أولاً",
+      "newest": "الأحدث أولاً"
+    }
+  },
+  "cart": {
+    "title": "سلتك",
+    "empty": "سلتك فارغة",
+    "startShopping": "ابدأ التسوق",
+    "promo": "كود الخصم",
+    "apply": "تطبيق",
+    "remove": "إزالة",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "total": "الإجمالي",
+    "checkout": "إتمام الشراء",
+    "continueShopping": "مواصلة التسوق",
+    "quantity": "الكمية"
+  },
+  "checkout": {
+    "title": "إتمام الشراء",
+    "customerInfo": "بيانات العميل",
+    "shippingAddress": "عنوان الشحن",
+    "paymentMethod": "طريقة الدفع",
+    "name": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "address": "العنوان",
+    "city": "المدينة",
+    "paymob": "بطاقة ائتمان / خصم",
+    "fawry": "الدفع في فوري",
+    "cod": "الدفع عند الاستلام",
+    "placeOrder": "تأكيد الطلب",
+    "processing": "جارٍ المعالجة...",
+    "orderSummary": "ملخص الطلب"
+  },
+  "payment": {
+    "title": "إتمام الدفع",
+    "fawryRef": "رقم مرجع فوري",
+    "fawryInstruction": "استخدم هذا الرقم في أي فرع فوري لإتمام الدفع.",
+    "codTitle": "تم تأكيد الطلب",
+    "codInstruction": "تم تسجيل طلبك. ستدفع عند الاستلام.",
+    "viewOrder": "عرض الطلب"
+  },
+  "confirmation": {
+    "title": "شكراً لك!",
+    "subtitle": "تم تسجيل طلبك بنجاح.",
+    "orderNumber": "رقم الطلب",
+    "continueShopping": "مواصلة التسوق",
+    "trackOrder": "تتبع الطلب",
+    "email": "تم إرسال بريد التأكيد إلى"
+  },
+  "about": {
+    "title": "قصتنا",
+    "subtitle": "مصنوعة بحب منذ ٢٠٢٠",
+    "story": "وُلدت شيني من حب عميق للحرف اليدوية المصرية. كل حقيبة هي لوحة فنية — كل خرزة توضع بنية، وكل لون يُختار ليحكي قصة.",
+    "mission": "رسالتنا",
+    "missionText": "الحفاظ على فن الخرز وإيصال الحرفية المصرية إلى العالم.",
+    "craft": "الحرفة",
+    "craftText": "تستغرق كل حقيبة ١٥ إلى ٤٠ ساعة للإنتاج. حرفيونا من أمهر أصحاب الحرف، تدربوا عبر أجيال من التراث.",
+    "values": {
+      "handmade": "١٠٠٪ يدوي الصنع",
+      "ethical": "مصادر أخلاقية",
+      "quality": "جودة فائقة",
+      "unique": "كل قطعة فريدة"
+    }
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "subtitle": "يسعدنا التواصل معك",
+    "whatsapp": "تحدث معنا على واتساب",
+    "email": "راسلنا",
+    "emailAddress": "hello@shinny.eg",
+    "name": "اسمك",
+    "message": "رسالتك",
+    "send": "إرسال الرسالة",
+    "sent": "تم الإرسال!",
+    "follow": "تابعنا",
+    "location": "القاهرة، مصر"
+  },
+  "footer": {
+    "tagline": "حقائب خرز يدوية من قلب مصر",
+    "quickLinks": "روابط سريعة",
+    "support": "الدعم",
+    "faq": "الأسئلة الشائعة",
+    "shipping": "معلومات الشحن",
+    "returns": "سياسة الإرجاع",
+    "rights": "© ٢٠٢٤ شيني. جميع الحقوق محفوظة."
+  },
+  "testimonials": {
+    "title": "ماذا يقول عملاؤنا"
+  },
+  "gallery": {
+    "title": "تابع رحلتنا",
+    "subtitle": "@shinny.eg"
+  },
+  "admin": {
+    "login": "تسجيل دخول الإدارة",
+    "dashboard": "لوحة التحكم",
+    "products": "المنتجات",
+    "orders": "الطلبات",
+    "logout": "تسجيل الخروج",
+    "totalRevenue": "إجمالي الإيرادات",
+    "totalOrders": "إجمالي الطلبات",
+    "totalProducts": "إجمالي المنتجات",
+    "pendingOrders": "الطلبات المعلقة",
+    "addProduct": "إضافة منتج",
+    "editProduct": "تعديل المنتج",
+    "deleteProduct": "حذف المنتج",
+    "updateStatus": "تحديث الحالة",
+    "status": {
+      "pending": "معلق",
+      "confirmed": "مؤكد",
+      "processing": "قيد المعالجة",
+      "shipped": "تم الشحن",
+      "delivered": "تم التسليم",
+      "cancelled": "ملغي"
+    }
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "error": "حدث خطأ ما",
+    "retry": "حاول مرة أخرى",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "egp": "ج.م",
+    "close": "إغلاق"
+  }
+}

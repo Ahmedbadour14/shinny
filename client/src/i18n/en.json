@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "admin": "Admin"
+  },
+  "hero": {
+    "badge": "Handmade in Egypt",
+    "title": "Artisan Beaded Bags",
+    "subtitle": "Each piece tells a story — crafted by hand, carried with pride.",
+    "cta": "Shop Collection",
+    "explore": "Explore Our Story"
+  },
+  "featured": {
+    "title": "Featured Collection",
+    "subtitle": "Hand-picked pieces from our finest artisans"
+  },
+  "categories": {
+    "title": "Shop by Category",
+    "all": "All",
+    "small": "Small",
+    "medium": "Medium",
+    "large": "Large",
+    "clutch": "Clutch",
+    "shoulder": "Shoulder Bag"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "addedToCart": "Added!",
+    "wishlist": "Save to Wishlist",
+    "inWishlist": "In Wishlist",
+    "color": "Color",
+    "size": "Size",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "description": "Description",
+    "sizeGuide": "Size Guide",
+    "related": "You May Also Like",
+    "whatsappOrder": "Order via WhatsApp",
+    "shareProduct": "Share"
+  },
+  "shop": {
+    "title": "Our Collection",
+    "filters": "Filters",
+    "sortBy": "Sort By",
+    "search": "Search bags...",
+    "noResults": "No products found",
+    "clearFilters": "Clear Filters",
+    "priceRange": "Price Range",
+    "sort": {
+      "default": "Default",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "newest": "Newest First"
+    }
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "startShopping": "Start Shopping",
+    "promo": "Promo Code",
+    "apply": "Apply",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "continueShopping": "Continue Shopping",
+    "quantity": "Qty"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "customerInfo": "Customer Information",
+    "shippingAddress": "Shipping Address",
+    "paymentMethod": "Payment Method",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Street Address",
+    "city": "City",
+    "paymob": "Credit / Debit Card",
+    "fawry": "Pay at Fawry",
+    "cod": "Cash on Delivery",
+    "placeOrder": "Place Order",
+    "processing": "Processing...",
+    "orderSummary": "Order Summary"
+  },
+  "payment": {
+    "title": "Complete Payment",
+    "fawryRef": "Your Fawry Reference",
+    "fawryInstruction": "Use this reference at any Fawry outlet to complete your payment.",
+    "codTitle": "Cash on Delivery Confirmed",
+    "codInstruction": "Your order has been placed. Pay upon delivery.",
+    "viewOrder": "View Order"
+  },
+  "confirmation": {
+    "title": "Thank You!",
+    "subtitle": "Your order has been placed successfully.",
+    "orderNumber": "Order Number",
+    "continueShopping": "Continue Shopping",
+    "trackOrder": "Track Order",
+    "email": "A confirmation email has been sent to"
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "Handcrafted with love since 2020",
+    "story": "Shinny was born from a deep love for Egyptian craftsmanship. Every bag is a canvas — each bead placed with intention, each color chosen to tell a story.",
+    "mission": "Our Mission",
+    "missionText": "To preserve the art of beadwork and bring Egyptian artistry to the world.",
+    "craft": "The Craft",
+    "craftText": "Each bag takes 15–40 hours to create. Our artisans are masters of their trade, trained through generations of tradition.",
+    "values": {
+      "handmade": "100% Handmade",
+      "ethical": "Ethically Sourced",
+      "quality": "Premium Quality",
+      "unique": "Each Piece Unique"
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you",
+    "whatsapp": "Chat on WhatsApp",
+    "email": "Email Us",
+    "emailAddress": "hello@shinny.eg",
+    "name": "Your Name",
+    "message": "Your Message",
+    "send": "Send Message",
+    "sent": "Message Sent!",
+    "follow": "Follow Us",
+    "location": "Cairo, Egypt"
+  },
+  "footer": {
+    "tagline": "Handmade beaded bags from the heart of Egypt",
+    "quickLinks": "Quick Links",
+    "support": "Support",
+    "faq": "FAQ",
+    "shipping": "Shipping Info",
+    "returns": "Returns",
+    "rights": "© 2024 Shinny. All rights reserved."
+  },
+  "testimonials": {
+    "title": "What Our Customers Say"
+  },
+  "gallery": {
+    "title": "Follow Our Journey",
+    "subtitle": "@shinny.eg"
+  },
+  "admin": {
+    "login": "Admin Login",
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "orders": "Orders",
+    "logout": "Logout",
+    "totalRevenue": "Total Revenue",
+    "totalOrders": "Total Orders",
+    "totalProducts": "Total Products",
+    "pendingOrders": "Pending Orders",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "deleteProduct": "Delete Product",
+    "updateStatus": "Update Status",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "processing": "Processing",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "egp": "EGP",
+    "close": "Close"
+  }
+}
