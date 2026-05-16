@@ -60,7 +60,7 @@ router.get('/', async (req: Request, res: Response) => {
 
     res.json(parsed)
   } catch (err) {
-    console.error(err)
+    console.error('Products error:', err)
     res.status(500).json({ error: 'Failed to fetch products' })
   }
 })
