@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express'
 import { PrismaClient } from '@prisma/client'
-import { getAuthToken, createOrder, getPaymentKey, getIframeUrl } from '../services/paymobService'
+import { getAuthToken, createOrder, getPaymentKey, getIframeUrl, verifyPaymobHmac } from '../services/paymobService'
 import { createFawryCharge } from '../services/fawryService'
 
 const router = Router()
@@ -39,7 +39,7 @@ router.post('/paymob/init', async (req: Request, res: Response) => {
     if (orderId) {
       await prisma.order.update({
         where: { id: Number(orderId) },
-        data: { paymobToken: paymentKey },
+        data: { paymobToken: String(paymobOrderId) },
       })
     }
 
@@ -53,12 +53,23 @@ router.post('/paymob/init', async (req: Request, res: Response) => {
 // POST /api/payment/paymob/webhook
 router.post('/paymob/webhook', async (req: Request, res: Response) => {
   try {
+    const hmac = req.query.hmac as string
     const { obj } = req.body
-    if (obj && obj.success === true) {
-      const token = obj.payment_key_claims?.billing_data?.extra?.orderId
+
+    if (!hmac || !obj) {
+      return res.status(400).json({ error: 'Missing hmac or obj' })
+    }
+
+    const isValid = verifyPaymobHmac(hmac, obj)
+    if (!isValid) {
+      return res.status(401).json({ error: 'Invalid HMAC signature' })
+    }
+
+    if (obj.success === true) {
+      const token = obj.order?.id
       if (token) {
         await prisma.order.updateMany({
-          where: { paymobToken: token },
+          where: { paymobToken: String(token) },
           data: { paymentStatus: 'paid', status: 'confirmed' },
         })
       }
