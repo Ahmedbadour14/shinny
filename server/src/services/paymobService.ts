@@ -56,7 +56,7 @@ export async function getPaymentKey(
 }
 
 export function getIframeUrl(paymentKey: string): string {
-  return `https://accept.paymob.com/api/acceptance/iframes/${IFRAME_ID}?payment_token=${paymentKey}`
+  return `https://accept.paymob.com/api/acceptance/iframes/${process.env.PAYMOB_IFRAME_ID}?payment_token=${paymentKey}`
 }
 
 import * as crypto from 'crypto'
