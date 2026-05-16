@@ -223,7 +223,7 @@ export async function main() {
   })
 
   // Seed admin
-  const passwordHash = await bcrypt.hash(process.env.ADMIN_PASSWORD || 'shinny@admin123', 10)
+  const passwordHash = await bcrypt.hash(process.env.ADMIN_PASSWORD || 'shinny@admin123bedo', 10)
   await prisma.admin.upsert({
     where: { email: process.env.ADMIN_EMAIL || 'admin@shinny.eg' },
     update: { passwordHash },

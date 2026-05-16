@@ -72,11 +72,6 @@ export default function AdminLogin() {
             </button>
           </form>
 
-          <div className="mt-5 pt-4 border-t border-cream/30 dark:border-navy-lighter">
-            <p className="text-xs text-center text-navy/40 dark:text-cream/40">
-              Default: admin@shinny.eg / shinny@admin123
-            </p>
-          </div>
         </div>
       </motion.div>
     </div>
