@@ -198,7 +198,7 @@ const products = [
   },
 ]
 
-async function main() {
+export async function main() {
   console.log('🌱 Seeding database...')
 
   // Seed products
@@ -236,6 +236,8 @@ async function main() {
   console.log(`✅ Seeded ${products.length} products, 2 promo codes, and 1 admin.`)
 }
 
-main()
-  .catch(console.error)
-  .finally(() => prisma.$disconnect())
+if (require.main === module) {
+  main()
+    .catch(console.error)
+    .finally(() => prisma.$disconnect())
+}
