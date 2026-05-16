@@ -199,6 +199,12 @@ const products = [
 ]
 
 export async function main() {
+  const existingProducts = await prisma.product.count();
+  if (existingProducts > 0) {
+    console.log('Database already seeded, skipping...');
+    return;
+  }
+
   console.log('🌱 Seeding database...')
 
   // Seed products
